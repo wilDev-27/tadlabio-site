@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="تادلة بيو - منتجات مغربية طبيعية وأصيلة من منطقة تادلة. زيت زيتون، زبدة تقليدية، ومنتجات طبيعية 100٪."
+    />
+    <meta
+      property="og:title"
+      content="تادلة بيو - منتجات مغربية طبيعية وأصيلة"
+    />
+    <meta
+      property="og:description"
+      content="اكتشفوا منتجات 100٪ طبيعية من قلب منطقة قصبة تادلة "
+    />
+    <meta property="og:image" content="assets/images/hero-bg.jpg" />
+    <meta property="og:url" content="https://tadlabio.com" />
+    <link rel="canonical" href="https://tadlabio.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>تادلة بيو - منتجات مغربية طبيعية وأصيلة</title>
+    <style>
+      /* Critical CSS for mobile first render */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .hero {
+        margin-top: 80px;
+        padding: 40px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #8fbc8f 0%, #6b8e23 100%);
+        color: white;
+      }
+      /* FIXED Logo Styling */
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        min-width: 160px;
+        height: 50px;
+      }
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .logo-english {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        line-height: 1;
+        margin-bottom: 2px;
+      }
+      .logo-tadla {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #556b2f;
+        letter-spacing: 0.5px;
+      }
+      .logo-bio {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #e2725b;
+      }
+      .logo-arabic {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 11px;
+        color: #708090;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+      .logo-divider {
+        width: 2px;
+        height: 20px;
+        background-color: #f5deb3;
+        margin: 0 4px;
+      }
+      /* Header content */
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        gap: 1rem;
+        min-height: 70px;
+      }
+      /* Icon Styling */
+      .cart-icon svg,
+      .mobile-menu-btn svg,
+      .close-btn svg {
+        display: block;
+        stroke: #2f4f4f;
+        transition: stroke 0.3s ease;
+      }
+      .cart-icon:hover svg,
+      .mobile-menu-btn:hover svg {
+        stroke: #6b8e23;
+      }
+      .close-btn:hover svg {
+        stroke: #e2725b;
+      }
+      /* Responsive logo */
+      @media (max-width: 768px) {
+        .logo {
+          min-width: 140px;
+          height: 45px;
+        }
+        .logo-tadla,
+        .logo-bio {
+          font-size: 20px;
+        }
+        .logo-arabic {
+          font-size: 10px;
+        }
+        .header-content {
+          min-height: 65px;
+          padding: 0.75rem 0;
+        }
+      }
+      @media (max-width: 480px) {
+        .logo {
+          min-width: 120px;
+          height: 40px;
+        }
+        .logo-tadla,
+        .logo-bio {
+          font-size: 18px;
+        }
+        .logo-arabic {
+          font-size: 9px;
+        }
+        .header-content {
+          min-height: 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- FIXED Logo - HTML/CSS Version -->
+          <a href="#" class="logo">
+            <div class="logo-container">
+              <div class="logo-english">
+                <span class="logo-tadla">BIO</span>
+                <span class="logo-divider"></span>
+                <span class="logo-bio">TADLA</span>
+              </div>
+              <span class="logo-arabic">تادلة بيو</span>
+            </div>
+          </a>
+
+          <nav class="nav" aria-label="التنقل الرئيسي">
+            <ul class="nav-list">
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#products">المنتجات</a></li>
+              <li><a href="#about">من نحن</a></li>
+              <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <button
+              class="cart-icon"
+              aria-label="عربة التسوق"
+              onclick="toggleCart()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M1.5 1.5h2l1.5 8h7" />
+                <circle cx="6" cy="13" r="1" />
+                <circle cx="12" cy="13" r="1" />
+              </svg>
+              <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <button
+              class="mobile-menu-btn"
+              aria-label="قائمة الجوال"
+              onclick="toggleMobileMenu()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M2 4h12M2 8h12M2 12h12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <button
+          class="close-btn"
+          onclick="toggleMobileMenu()"
+          aria-label="إغلاق القائمة"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#home" onclick="toggleMobileMenu()">الرئيسية</a>
+        <a href="#products" onclick="toggleMobileMenu()">المنتجات</a>
+        <a href="#about" onclick="toggleMobileMenu()">من نحن</a>
+        <a href="#contact" onclick="toggleMobileMenu()">اتصل بنا</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">نكهة تادلة الأصيلة</h1>
+          <p class="hero-subtitle">
+            منتجات 100٪ طبيعية من قلب منطقة تادلة المغربية. جربوا النكهات
+            التقليدية الصافية المصنوعة بحكمة الأجيال.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="scrollToProducts()">
+              تسوق المنتجات
+            </button>
+            <button class="btn btn-secondary" onclick="sendOrderToWhatsApp()">
+              اطلب عبر واتساب
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>منتجاتنا الطبيعية</h2>
+          <p>مصنوعة يدوياً بالعناية، طبيعية بالنقاء</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">
+            جميع المنتجات
+          </button>
+          <button class="filter-btn" data-filter="organic">عضوي</button>
+          <button class="filter-btn" data-filter="oil">زيوت</button>
+          <button class="filter-btn" data-filter="dairy">ألبان</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be loaded here -->
+          <div class="product-card" data-category="oil">
+            <img
+              src="https://via.placeholder.com/300x200/8FBC8F/FFFFFF?text=زيت+الزيتون"
+              alt="زيت الزيتون"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">زيت الزيتون البكر الممتاز</h3>
+              <div class="product-price">120 درهم</div>
+              <div class="product-weight">لتر واحد</div>
+              <p class="product-desc">
+                زيت زيتون بكر ممتاز مستخلص من أشجار الزيتون في منطقة تادلة. 100%
+                طبيعي.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(1)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(1)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="dairy">
+            <img
+              src="https://via.placeholder.com/300x200/F5DEB3/556B2F?text=زبدة+محلية"
+              alt="زبدة محلية"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">زبدة محلية طبيعية</h3>
+              <div class="product-price">80 درهم</div>
+              <div class="product-weight">500 جرام</div>
+              <p class="product-desc">
+                زبدة محلية مصنوعة يدوياً من حليب الأبقار التي ترعى في مراعي
+                تادلة.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(2)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(2)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="organic">
+            <img
+              src="https://via.placeholder.com/300x200/6B8E23/FFFFFF?text=عسل+طبيعي"
+              alt="عسل طبيعي"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3 class="product-title">عسل طبيعي 100%</h3>
+              <div class="product-price">150 درهم</div>
+              <div class="product-weight">كيلوغرام</div>
+              <p class="product-desc">
+                عسل طبيعي من نحل يتغذى على أزهار المنطقة، غني بالفيتامينات
+                والمعادن.
+              </p>
+              <div class="product-actions">
+                <button class="btn-add-cart" onclick="addToCart(3)">
+                  أضف إلى العربة
+                </button>
+                <button
+                  class="btn-view-details"
+                  onclick="viewProductDetails(3)"
+                >
+                  تفاصيل
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>متجذرون في التقاليد</h2>
+            <p>
+              لأجيال عديدة، زرعت عائلتنا في منطقة تادلة الأرض باستخدام طرق
+              مستدامة، محافظة على النكهات الأصيلة والفوائد الغذائية لمنتجاتنا
+              الطبيعية.
+            </p>
+            <div class="features">
+              <div class="feature">
+                <h3>100٪ طبيعي</h3>
+                <p>لا إضافات، لا مواد حافظة، فقط طبيعة نقية</p>
+              </div>
+              <div class="feature">
+                <h3>طرق تقليدية</h3>
+                <p>تقنيات موروثة عبر الأجيال</p>
+              </div>
+              <div class="feature">
+                <h3>مستدام</h3>
+                <p>زراعة وإنتاج واعيان بيئياً</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <div class="container">
+        <div class="section-header">
+          <h2>آراء عملائنا</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"شكرا بزاف زيت زوينة ديال منطقة بني ملال كما تعودنا."</p>
+            <span>-فاطمة</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"زيت بمداق زيتون طبيعية كتحمق شكرا."</p>
+            <span>- أحمد</span>
+          </div>
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"زيت حلوى زوينة الله يعطيك الصحة."</p>
+            <span>- سارة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>اتصل بنا</h2>
+          <p>نحن سعداء بتواصلكم معنا</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>معلومات الاتصال</h3>
+            <p>📍حي النصر تجزئة المنزه رقم 21</p>
+            <p>📞0705675426</p>
+            <p>✉️ hananhotel06@gmail.com</p>
+          </div>
+          <button class="btn btn-primary" onclick="sendOrderToWhatsApp()">
+            راسلنا على واتساب
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <!-- Fixed Footer Logo -->
+            <div class="footer-logo">
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-bottom: 2px;
+                  "
+                >
+                  <span
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 600;
+                      font-size: 18px;
+                      color: #f5deb3;
+                    "
+                    >BIO</span
+                  >
+                  <span
+                    style="width: 1px; height: 15px; background-color: #8fbc8f"
+                  ></span>
+                  <span
+                    style="
+                      font-family: 'Inter', sans-serif;
+                      font-weight: 600;
+                      font-size: 18px;
+                      color: #f5deb3;
+                    "
+                    >TADLA</span
+                  >
+                </div>
+                <span
+                  style="
+                    font-family: 'Segoe UI', sans-serif;
+                    font-size: 10px;
+                    color: #a9a9a9;
+                  "
+                  >تادلة بيو</span
+                >
+              </div>
+            </div>
+            <p>نقدم النكهات المغربية الأصيلة إلى مائدتك.</p>
+          </div>
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <a href="#products">المنتجات</a>
+            <a href="#about">قصتنا</a>
+            <a href="#contact">اتصل بنا</a>
+          </div>
+          <div class="footer-section">
+            <h4>السياسات</h4>
+            <a href="#">الشحن والإرجاع</a>
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الخدمة</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 تادلة بيو. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3>🛒 طلبك</h3>
+        <button
+          class="close-btn"
+          onclick="toggleCart()"
+          aria-label="إغلاق العربة"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+      </div>
+      <div class="cart-content" id="cartContent">
+        <!-- Cart items will be loaded here -->
+        <div class="empty-cart">العربة فارغة</div>
+      </div>
+      <div class="cart-footer">
+        <div class="shipping-message" id="shippingMessage">
+          🚚 توصيل مجاني داخل قصبة تادلة. التوصيل خارج قصبة تادلة غير مجاني.
+        </div>
+        <div class="cart-totals">
+          <div class="total-line grand-total">
+            <span>المجموع الكلي:</span>
+            <span id="cartTotal">0 درهم</span>
+          </div>
+        </div>
+        <div class="cart-actions">
+          <button
+            class="btn btn-primary btn-whatsapp-order"
+            onclick="sendOrderToWhatsApp()"
+          >
+            📱 أرسل الطلب عبر واتساب
+          </button>
+          <button class="btn btn-secondary" onclick="toggleCart()">
+            متابعة التسوق
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="productModal">
+      <div class="product-modal-content">
+        <button
+          class="close-btn"
+          onclick="closeProductModal()"
+          aria-label="إغلاق تفاصيل المنتج"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 3l10 10M13 3L3 13" />
+          </svg>
+        </button>
+        <div class="product-modal-body" id="productModalBody">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Basic JavaScript for functionality -->
+    <script>
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("active");
+        document.body.style.overflow = mobileMenu.classList.contains("active")
+          ? "hidden"
+          : "";
+      }
+
+      // Cart toggle
+      function toggleCart() {
+        const cartDrawer = document.getElementById("cartDrawer");
+        const cartOverlay = document.getElementById("cartOverlay");
+        cartDrawer.classList.toggle("active");
+        cartOverlay.classList.toggle("active");
+        document.body.style.overflow = cartDrawer.classList.contains("active")
+          ? "hidden"
+          : "";
+      }
+
+      // Scroll to products
+      function scrollToProducts() {
+        document
+          .getElementById("products")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Basic cart functionality
+      let cart = [];
+
+      function addToCart(productId) {
+        // Simple cart functionality
+        const cartCount = document.getElementById("cartCount");
+        let count = parseInt(cartCount.textContent) || 0;
+        cartCount.textContent = count + 1;
+
+        // Show cart
+        toggleCart();
+      }
+
+      function sendOrderToWhatsApp() {
+        const phoneNumber = "212705675426";
+        const message = encodeURIComponent(
+          "مرحباً، أريد طلب منتجات من تادلة بيو"
+        );
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", function () {
+        // Close mobile menu when clicking links
+        document.querySelectorAll(".mobile-nav a").forEach((link) => {
+          link.addEventListener("click", toggleMobileMenu);
+        });
+
+        // Filter products
+        document.querySelectorAll(".filter-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            const filter = this.getAttribute("data-filter");
+
+            // Update active button
+            document.querySelectorAll(".filter-btn").forEach((btn) => {
+              btn.classList.remove("active");
+            });
+            this.classList.add("active");
+
+            // Filter products (basic implementation)
+            const products = document.querySelectorAll(".product-card");
+            products.forEach((product) => {
+              if (
+                filter === "all" ||
+                product.getAttribute("data-category") === filter
+              ) {
+                product.style.display = "block";
+              } else {
+                product.style.display = "none";
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
